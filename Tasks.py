@@ -12,19 +12,15 @@ print(myList)
 
 requiredNumber = int(input('Введите искомое число от 1 до 100: '))
 count = myList.count(requiredNumber)
-requiredNumberNew1 = requiredNumber - 1
-requiredNumberNew2 = requiredNumber + 1
-stop = 0
+requiredNumberNew = myList[0]
 
 if count > 0:
     print(count)
 else:
-    for i in range(lengthyList):
-        if requiredNumberNew1 == myList[i] or requiredNumberNew2 == myList[i]:
-            stop = requiredNumber
-            print (f'Искомое число не найдено, максимально близкое ему по значению: {myList[i]}')
-    else:
-        requiredNumberNew1 -= 1
-        requiredNumberNew2 += 1     
+    for item in myList:
+        if abs(item - requiredNumberNew) < abs(requiredNumberNew - requiredNumber):
+            requiredNumberNew = item
+    print (f'Искомое число не найдено, максимально близкое ему по значению: {requiredNumberNew}')        
+    
 
 
