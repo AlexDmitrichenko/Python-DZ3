@@ -35,7 +35,7 @@
 
 # myDictEnglish = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP', 4:'FHVWY', 5:'K', 8:'JX', 10:'QZ'}
 # myDictRussian = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФЩЪ'}
-# text = input('Enter a word in English: ').upper()
+# text = input('Введите слово: ').upper()
 
 # myDictNew = {} 
 # for k, v in myDictEnglish.items():
