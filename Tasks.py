@@ -32,14 +32,25 @@
 # Напишите программу, которая вычисляет стоимость введенного пользователем слова. Будем считать, 
 # что на вход подается только одно слово, которое содержит либо только английские, либо только русские буквы. 
 # ноутбук     12
-myDict = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP', 4:'FHVWY', 5:'K', 8:'JX', 10:'QZ'}
-text = input('Enter a word in English: ').upper()
-sum = 0
-# print(sum([k for i in text for k, v in myDict.items() if i in v]))
-for k, v in myDict.items():
-    for i in text:
-        if text[i] == v:
-            sum += k
-print(sum) 
+
+# myDictEnglish = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP', 4:'FHVWY', 5:'K', 8:'JX', 10:'QZ'}
+# myDictRussian = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФЩЪ'}
+# text = input('Enter a word in English: ').upper()
+
+# myDictNew = {} 
+# for k, v in myDictEnglish.items():
+#     if text[0] == v:
+#         myDictNew = myDictEnglish
+#     else:
+#         myDictNew = myDictRussian
+
+# sum = 0
+# for i in text:
+#     for k, v in myDictNew.items():
+#         if i in v:
+#             sum += k
+
+# print(sum) 
+
 
 
